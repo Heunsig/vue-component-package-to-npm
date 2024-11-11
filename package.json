@@ -1,7 +1,7 @@
 {
   "name": "heunsig-ui",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "type": "module",
   "main": "./dist/heunsig-ui.umd.js",
   "module": "./dist/heunsig-ui.js",
@@ -10,6 +10,10 @@
       "import": "./dist/heunsig-ui.js",
       "require": "./dist/heunsig-ui.umd.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Heunsig/vue-component-package-to-npm"
   },
   "scripts": {
     "dev": "vite",
