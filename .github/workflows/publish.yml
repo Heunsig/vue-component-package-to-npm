@@ -2,6 +2,11 @@ name: Publish to npm
 
 on:
   workflow_dispatch:
+    inputs:
+      run_specific_step:
+        description: "Run the specific step?"
+        required: true
+        default: "false"
   push:
     branches:
       - main
@@ -48,6 +53,7 @@ jobs:
         run: npm run build
 
       - name: Publish to npm
+        if: ${{ inputs.run_specific_step == 'true' }}
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
