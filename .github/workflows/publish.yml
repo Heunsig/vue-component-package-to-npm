@@ -2,6 +2,12 @@ name: Publish to npm
 
 on:
   workflow_dispatch:
+  # 참고 용도
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - 'src/**'
 
 jobs:
   test:
