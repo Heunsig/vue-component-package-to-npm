@@ -2,11 +2,6 @@ name: Publish to npm
 
 on:
   workflow_dispatch:
-    inputs:
-      run_specific_step:
-        description: "Run the specific step?"
-        required: true
-        default: "false"
   push:
     branches:
       - main
